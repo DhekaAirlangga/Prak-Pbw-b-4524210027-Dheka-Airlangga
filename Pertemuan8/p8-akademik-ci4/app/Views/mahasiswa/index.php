@@ -192,7 +192,6 @@
                 <?php if (!empty($mahasiswa)): ?>
                     <?php foreach ($mahasiswa as $mhs): ?>
                     <tr>
-                        <td><?= esc($mhs['id']); ?></td>
                         <td><?= esc($mhs['nim']); ?></td>
                         <td><?= esc($mhs['nama']); ?></td>
                         <td><?= esc($mhs['email']); ?></td>
@@ -200,10 +199,10 @@
                         <td><?= esc($mhs['angkatan']); ?></td>
                         <td><?= esc($mhs['ipk']); ?></td>
                         <td>
-                            <a href="/mahasiswa/edit/<?= $mhs['id']; ?>"
+                            <a href="/mahasiswa/edit/<?= $mhs['nim']; ?>"
                                class="btn-edit">Edit</a>
 
-                            <a href="/mahasiswa/hapus/<?= $mhs['id']; ?>"
+                            <a href="/mahasiswa/hapus/<?= $mhs['nim']; ?>"
                                class="btn-delete"
                                onclick="return confirm('Yakin ingin menghapus data ini?')">
                                Hapus

@@ -151,7 +151,7 @@
             </div>
         <?php endif; ?>
 
-        <form action="/mahasiswa/update/<?= $mahasiswa['id']; ?>" method="post" novalidate>
+        <form action="/mahasiswa/update/<?= $mahasiswa['nim']; ?>" method="post" novalidate>
 
             <div class="form-group">
                 <label>NIM</label>
